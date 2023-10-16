@@ -25,7 +25,7 @@ on:
 env:
   REPO_URL: https://github.com/padavanonly/immortalwrt
   REPO_BRANCH: master
-  FEEDS_CONF: feeds.conf.default
+  FEEDS_CONF: feeds.conf.mtwifi.default
   CONFIG_FILE: xiaomi_r3g_mtwifi.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
