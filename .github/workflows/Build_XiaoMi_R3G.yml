@@ -127,10 +127,10 @@ jobs:
         name: OpenWrt_firmware${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
         path: ${{ env.FIRMWARE }}
     
-    # - name: Generate release tag
-      # id: tag
-      # if: env.UPLOAD_RELEASE == 'true' && !cancelled()
-      # run: |
+    - name: Generate release tag
+      id: tag
+      if: env.UPLOAD_RELEASE == 'true' && !cancelled()
+      run: |
         echo "release_tag=$(date +"%Y.%m.%d-Xiaomi-CR660X")" >> $GITHUB_OUTPUT
         touch release.txt
         echo "Xiaomi-CR660X 自用精简 Openwrt：" >> release.txt
