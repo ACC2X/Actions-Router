@@ -9,7 +9,8 @@
 name: Build XiaoMi R3G mtwifi
 
 on:
- workflow_dispatch:
+  repository_dispatch:
+  workflow_dispatch:
   # schedule:
     # - cron: 0 22 * * *
 
